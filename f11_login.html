@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="Author" content="Harman Singh"/>
+    <meta name="description" content="login form"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <style>
+  
+    
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100dvh;
+            background-color: whitesmoke;
+            font-family: 'Courier New', Courier, monospace;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+         
+        section {
+            background-color: rgb(105, 223, 223);
+            width: 20rem;
+            padding: 1rem;
+            
+            border-radius: 20px;
+            box-shadow: 0px 5px 15px black;
+            font-size: 1.2rem;
+            display:flex;
+            justify-content: center;
+        }
+
+        input {
+            margin-bottom: 20px;
+            height: 40px;
+            padding:2px 10px;
+            font-size: 1.1rem;
+            width: 100%;
+            outline:none;
+            border-radius:8px;
+            background-color: white;
+            
+            
+        }
+
+       
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <main>
+            <form action="#" method="get">
+                <h2 style="text-align: center;color: black;font-family: Oleo;">Login</h2>
+                <br />
+                <label for="email" style="color:black;font-family: Oleo;">Email</label><br />
+                <input
+                style="border:2px solid black"
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+                minlength="3"
+                maxlength="8"
+                required/>
+                <br/>
+                <label for="Password" style="color:black;font-family: Oleo;">Password</label><br />
+                <input
+                style="border:2px solid black"
+                type="password"
+                id="Password"
+                name="Password"
+                placeholder="Enter Password"
+                minlength="3"
+                maxlength="8"
+                required/>
+                <input
+                
+                style="font-family: Oleo;margin-top:20px; border:2px solid black;"
+                type="submit"
+                value="Submit"
+                />
+
+                
+            </form>
+        </main>
+    </section>
+</body>
+</html>
