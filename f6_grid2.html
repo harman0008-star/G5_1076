@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100dvh;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            background-color: white;
+            color:white;
+        }
+        section{
+            padding:10px;
+        }
+        .box{
+            background-color: blueviolet;
+            color:white;
+            padding:0.5rem;
+            border-radius:5px;
+        }
+        .gc{
+            display:grid;
+            gap:0.5rem;
+
+            grid-template-columns: 160px 160px 160px;
+            grid-template-rows: 160px 160px 160px;
+            place-content: center;
+
+            #m1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                grid-row-start:1;
+                grid-row-end:2;
+            }
+            #m2{
+                grid-column-start: 3;
+                grid-column-end: 4;
+
+                grid-row-start:1;
+                grid-row-end:3;
+            }
+            #m3{
+                grid-column-start: 1;
+                grid-column-end: 2;
+
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+            #m5{
+                grid-column-start: 2;
+                grid-column-end: 4;
+
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+        }
+        @media (min-width:767px){
+            .gc{
+                grid-template-columns: 170px 170px 170px;
+            grid-template-rows: 170px 170px 170px;
+            }
+            #m1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                grid-row-start:1;
+                grid-row-end:2;
+            }
+            #m2{
+                grid-column-start: 3;
+                grid-column-end: 4;
+
+                grid-row-start:1;
+                grid-row-end:3;
+            }
+            #m3{
+                grid-column-start: 1;
+                grid-column-end: 2;
+
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+            #m5{
+                grid-column-start: 2;
+                grid-column-end: 4;
+
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+        }
+        @media (min-width:1024px){
+            .gc{
+                grid-template-columns: 180px 180px 180px;
+            grid-template-rows: 180px 180px 180px;
+            }
+             #m1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                grid-row-start:1;
+                grid-row-end:2;
+            }
+            #m2{
+                grid-column-start: 3;
+                grid-column-end: 4;
+
+                grid-row-start:1;
+                grid-row-end:3;
+            }
+            #m3{
+                grid-column-start: 1;
+                grid-column-end: 2;
+
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+            #m5{
+                grid-column-start: 2;
+                grid-column-end: 4;
+
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="box" style="height:10vh">Header/Navbar</section>
+
+    <section
+    class ="box gc"
+    style="height:80vh; background-color: white;">
+    <main class="box" id="m1">Content-1</main>
+    <main class="box" id="m2">Content-2</main>
+    <main class="box" id="m3">Content-3</main>
+    <main class="box" id="m4">Content-4</main>
+    <main class="box" id="m5">Content-5</main>
+    
+    </section>
+        <section 
+        class="box"
+        style="position: absolute; bottom:0; left:0; height: 10vh; width:100%">
+        Footer
+        </section>
+        <script></script>
+   
+</body>
+</html>
